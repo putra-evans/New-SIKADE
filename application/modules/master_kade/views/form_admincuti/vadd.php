@@ -64,6 +64,7 @@
                       </span>
                       <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                     </div>
+                    <span style="font-size: small;font-style: italic;color: red;">*Max upload file 10 MB</span>
                   </div>
                   <div class="help-block"></div>
                 </div>
@@ -113,6 +114,12 @@
                   <div class="row">
                     <div class="col-md-offset-1 col-xs-9">
                       <h4 style="text-align:left;font-weight:bold;">Kelengkapan Administrasi</h4>
+                      <span style="font-family: cursive; font-style: italic;">Note : </span>
+                      <ol>
+                        <li>Wajib Diisi <span style="color: red;">*</span></li>
+                        <li>Pastikan dokumen administrasi sudah diupload seluruhnya</li>
+                        <li>Pastikan dokumen administrasi max 10MB</li>
+                      </ol>
                       <div class="table-responsive">
                         <input type="hidden" name="id_admincuti" id="id_admincuti">
                         <input type="hidden" name="status" id="status" value="<?= $data_cuti['status'] ?>">
@@ -180,17 +187,17 @@
                           </tbody>
                         </table>
                       </div>
-                     <span style="font-family: cursive; font-style: italic;">Note : </span>
-                      <ol>
-                        <li>Wajib Diisi <span style="color: red;">*</span></li>
-                        <li>Pastikan dokumen administrasi sudah diupload seluruhnya</li>
-                      </ol>
                     </div>
                   </div>
                   <br>
                   <div class="row">
                     <div class="col-md-offset-1 col-xs-9">
                       <h4 style="text-align:left;font-weight:bold;">Kelengkapan Pendukung</h4>
+                      <span style="font-family: cursive; font-style: italic;">Note : </span>
+                      <ol>
+                        <li>Pastikan dokumen pendukung sudah diupload minimal 1 (satu) dokumen</li>
+                        <li>Pastikan dokumen administrasi max 10MB</li>
+                      </ol>
                       <div class="table-responsive">
                         <table class="table table-bordered table-striped" width="100%">
                           <thead>
@@ -254,10 +261,7 @@
                             } ?>
                           </tbody>
                         </table>
-                        <span style="font-family: cursive; font-style: italic;">Note : </span>
-                        <ol>
-                          <li>Pastikan dokumen pendukung sudah diupload minimal 1 (satu) dokumen</li>
-                        </ol>
+
                       </div>
                     </div>
                   </div>

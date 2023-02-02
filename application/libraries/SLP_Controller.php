@@ -9,21 +9,23 @@
  *
  */
 
-class SLP_Controller extends MY_Controller {
+class SLP_Controller extends MY_Controller
+{
 
   var $session_info = array();
 
-  public function __construct() {
+  public function __construct()
+  {
     parent::__construct();
 
     $this->output->set_header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-		$this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate');
-		$this->output->set_header('Cache-Control: post-check=0, pre-check=0, max-age=0', FALSE);
-		$this->output->set_header('Last-Modified: ' . gmdate( 'D, d M Y H:i:s' ) . ' GMT' );
-		$this->output->set_header('Pragma: no-cache');
+    $this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate');
+    $this->output->set_header('Cache-Control: post-check=0, pre-check=0, max-age=0', FALSE);
+    $this->output->set_header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
+    $this->output->set_header('Pragma: no-cache');
 
-    $this->session_info['app_name']   = "SIKADE 2020";
-    $this->session_info['app_footer'] = "Hak Cipta ©" . ((date('Y') == "2020") ? "2020" : "2020 - ".date('Y')) . " " . "Sistem Informasi Kepala Daerah <i>Powerd by</i> Team IT Kominfo Prov. Sumbar";
+    $this->session_info['app_name']   = "SIKADE 2022 v2";
+    $this->session_info['app_footer'] = "Hak Cipta ©" . ((date('Y') == "2020") ? "2020" : "2020 - " . date('Y')) . " " . "Sistem Informasi Kepala Daerah <i>Powerd by</i> Team IT Kominfo Prov. Sumbar";
 
     //$this->load->library('Menu_loader');
 
@@ -37,7 +39,6 @@ class SLP_Controller extends MY_Controller {
     $this->template->set_partial('footer', 'layouts/partials/footer', FALSE);
     $this->template->set_partial('javascript', 'layouts/partials/javascript', FALSE);
   }
-
 }
 
 // This is the end of WRC_AdminCont class

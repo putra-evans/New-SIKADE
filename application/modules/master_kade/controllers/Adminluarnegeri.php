@@ -78,7 +78,7 @@ class Adminluarnegeri extends SLP_Controller
 				} else {
 					$data = $this->Model_adminluarnegeri->insertDataDiriLuarnegeri();
 					if ($data['response'] == 'NOFILE') {
-						$result = array('status' => 0, 'message' => array('file_ktp' => 'Scan ktp wajib diinputkan dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+						$result = array('status' => 0, 'message' => array('file_ktp' => 'Scan ktp wajib diinputkan dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 					} elseif ($data['response'] == 'SUCCESS') {
 						$result = array('status' => 1, 'message' => 'Penambahan data baru atas nama ' . $data['nama'] . ' berhasil...', 'kode' => $data['kode'], 'csrfHash' => $csrfHash);
 					}
@@ -101,7 +101,7 @@ class Adminluarnegeri extends SLP_Controller
 				if ($data['message'] == 'SUCCESS') {
 					$result = array('status' => 1, 'message' => 'Data berhasil ditambahkan...', 'csrfHash' => $csrfHash);
 				} elseif ($data['message'] == 'NOFILE') {
-					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 				}
 			} else {
 				$result = array('status' => 0, 'message' => array('isi' => 'Proses input data gedung gagal, mohon periksa data kembali...'), 'csrfHash' => $csrfHash);
@@ -121,7 +121,7 @@ class Adminluarnegeri extends SLP_Controller
 				if ($data['message'] == 'SUCCESS') {
 					$result = array('status' => 1, 'message' => 'Data berhasil ditambahkan...', 'csrfHash' => $csrfHash);
 				} elseif ($data['message'] == 'NOFILE') {
-					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen pendukung wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen pendukung wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 				}
 			} else {
 				$result = array('status' => 0, 'message' => array('isi' => 'Proses input data gedung gagal, mohon periksa data kembali...'), 'csrfHash' => $csrfHash);
@@ -143,7 +143,7 @@ class Adminluarnegeri extends SLP_Controller
 				// } else {
 				$data = $this->Model_adminluarnegeri->insertDataPengajuan();
 				if ($data['response'] == 'NOFILE') {
-					$result = array('status' => 0, 'message' => array('file_ktp' => 'Scan ktp wajib diinputkan dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+					$result = array('status' => 0, 'message' => array('file_ktp' => 'Scan ktp wajib diinputkan dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 				} elseif ($data['response'] == 'SUCCESS') {
 					$result = array('status' => 1, 'message' => 'Penambahan data baru atas nama ' . $data['nama'] . ' berhasil...', 'kode' => $data['kode'], 'csrfHash' => $csrfHash);
 					// }
@@ -304,7 +304,7 @@ class Adminluarnegeri extends SLP_Controller
 					if ($data['message'] == 'SUCCESS') {
 						$result = array('status' => 1, 'message' => 'Data berhasil diedit...', 'csrfHash' => $csrfHash);
 						// } elseif ($data['message'] == 'NOFILE') {
-						// 	$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+						// 	$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 					}
 				}
 			} else {
@@ -324,7 +324,7 @@ class Adminluarnegeri extends SLP_Controller
 				if ($data['message'] == 'SUCCESS') {
 					$result = array('status' => 1, 'message' => 'Data berhasil ditambahkan...', 'csrfHash' => $csrfHash);
 				} elseif ($data['message'] == 'NOFILE') {
-					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 				}
 			} else {
 				$result = array('status' => 0, 'message' => array('isi' => 'Proses input data gedung gagal, mohon periksa data kembali...'), 'csrfHash' => $csrfHash);
@@ -343,7 +343,7 @@ class Adminluarnegeri extends SLP_Controller
 				if ($data['message'] == 'SUCCESS') {
 					$result = array('status' => 1, 'message' => 'Data berhasil ditambahkan...', 'csrfHash' => $csrfHash);
 				} elseif ($data['message'] == 'NOFILE') {
-					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen administrasi wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 				}
 			} else {
 				$result = array('status' => 0, 'message' => array('isi' => 'Proses input data gedung gagal, mohon periksa data kembali...'), 'csrfHash' => $csrfHash);
@@ -363,7 +363,7 @@ class Adminluarnegeri extends SLP_Controller
 				if ($data['message'] == 'SUCCESS') {
 					$result = array('status' => 1, 'message' => 'Data berhasil ditambahkan...', 'csrfHash' => $csrfHash);
 				} elseif ($data['message'] == 'NOFILE') {
-					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen pendukung wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 1MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
+					$result = array('status' => 0, 'message' => array('isi' => 'Dokumen pendukung wajib diupload dengan format png/jpg/jpeg/pdf serta ukuran maksimal 10MB...'), 'kode' => '', 'csrfHash' => $csrfHash);
 				}
 			} else {
 				$result = array('status' => 0, 'message' => array('isi' => 'Proses input data gedung gagal, mohon periksa data kembali...'), 'csrfHash' => $csrfHash);
