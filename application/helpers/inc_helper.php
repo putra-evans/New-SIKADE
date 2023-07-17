@@ -13,8 +13,8 @@ if (!function_exists('error_message')) {
   {
     $ci = &get_instance();
 
-    $error = '<div class="alert alert-dismissable alert-' . $type . '">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> 	<strong>' . $label . '</strong> ' . $message . ' </button>
+    $error = '<div class="alert alert-' . $type . '" role="alert">
+                <strong>' . $label . '</strong> ' . $message . ' 
 							
 							</div>';
 

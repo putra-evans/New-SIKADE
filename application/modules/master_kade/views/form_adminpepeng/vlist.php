@@ -77,9 +77,9 @@
                   </span>
                   <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                 </div>
+                <div class="help-block"></div>
                 <a id="filependukung"></a>
               </div>
-              <div class="help-block"></div>
             </div>
           </div>
 

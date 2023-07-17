@@ -342,8 +342,7 @@ class Model_adminpepeng extends CI_Model
 		$create_date   	= date('Y-m-d H:i:s');
 		$create_ip     	= $this->input->ip_address();
 		$id_adminupload = base64_decode($this->input->post('id_adminupload', TRUE));
-		// var_dump($id_adminupload);
-		// exit;
+
 		$id_adminpepeng = base64_decode($this->input->post('id_adminpepeng', TRUE));
 		$id_administrasi = base64_decode($this->input->post('id_administrasi', TRUE));
 		// ambil direktori pendukung
